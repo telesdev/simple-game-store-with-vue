@@ -1,0 +1,7 @@
+[
+    {"id":1, "nome":"Chrono Trigger", "genero":"RPG", "alugado":false},
+    {"id":2, "nome":"Final Fantasy 6", "genero":"RPG", "alugado":true},
+    {"id":3, "nome":"Super Mario RPG", "genero":"RPG", "alugado":true},
+    {"id":4, "nome":"Star Ocean", "genero":"RPG", "alugado":false},
+    {"id":5, "nome":"International Superstar Soccer Deluxe", "genero":"Esporte", "alugado":true}
+]
