@@ -1,6 +1,7 @@
 <template>
     <h2>Jogos</h2>
-    <pre>"Clique num jogo para alugá-lo"</pre>
+    <pre>"Clique em 'editar' para alterar os campos do jogo"</pre>
+    <pre>"Clique de novo para finalizar a alteração"</pre>
     <div class="card-deck">
         <slot></slot>
     </div>
