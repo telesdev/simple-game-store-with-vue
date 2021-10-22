@@ -4,7 +4,8 @@
             <h5 class="card-title">{{ jogo.nome }}</h5>
             <p class="card-text">{{ jogo.genero }}</p>
         </div>
-        <button class="btn btn-outline-success mx-3 mb-4">Alugar</button>
+        <button class="btn btn-outline-success mx-3 mb-4" v-if="jogo.alugado == false">Alugar</button>
+        <button class="btn btn-outline-warning mx-3 mb-4" v-else>Devolver</button>
         <button class="btn btn-outline-secondary mx-3 mb-4">Editar</button>
         <button class="btn btn-outline-danger mx-3 mb-4" @click='apagar(jogo)'>Deletar</button>
     </div>

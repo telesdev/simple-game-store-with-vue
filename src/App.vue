@@ -44,15 +44,15 @@ export default {
             this.jogos = []
         },
         cadastrar() {
-            // if(!this.jogo.nome || !this.jogo.genero)
-            //     return
-            // let jogo = {
-            //     id: this.jogos[this.jogos.length-1].id + 1,
-            //     nome: this.jogo.nome,
-            //     genero: this.jogo.genero,
-            //     alugado: false
-            // }
-            this.jogos.push(this.jogo)
+            if(!this.jogo.nome || !this.jogo.genero)
+                return
+            let jogo = {
+                id: this.jogos[this.jogos.length-1].id + 1,
+                nome: this.jogo.nome,
+                genero: this.jogo.genero,
+                alugado: false
+            }
+            this.jogos.push(jogo)
             this.jogo = {}
         }
     },

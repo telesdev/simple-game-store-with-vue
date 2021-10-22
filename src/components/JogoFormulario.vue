@@ -1,8 +1,8 @@
 <template>
     <form class="mx-auto mt-4">
-        <FormularioCampo nome='Nome' v-model='jogo.nome'></FormularioCampo>
-        <FormularioCampo nome='Gênero' v-model='jogo.genero'></FormularioCampo>
-        <button class="btn btn-primary m-2" type="button" @click='this.$emit("registrou", this.jogo)'>Adicionar</button>
+        <FormularioCampo nome='Nome' v-model='jogo.nome' :adicionar="registrou"></FormularioCampo>
+        <FormularioCampo nome='Gênero' v-model='jogo.genero' :adicionar="registrou"></FormularioCampo>
+        <button class="btn btn-primary m-2" type="button" @click='registrou'>Adicionar</button>
     </form>    
 </template>
 
@@ -13,6 +13,11 @@ export default {
     components: { FormularioCampo },
     props: {
         jogo: Object
+    },
+    methods: {
+        registrou(){
+            this.$emit("registrou", this.jogo)
+        }
     },
     emits: ['registrou']
 }
